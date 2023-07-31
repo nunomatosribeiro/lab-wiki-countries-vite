@@ -29,9 +29,10 @@ const [countryData, setCountryData] = useState({})
         <div>Loading...</div>
         ) : (
 <div>
+<img src={`https://flagpedia.net/data/flags/icon/72x54/${countryData.alpha2Code.toLowerCase()}.png`} />
 <p>Country name: {countryData.name.common}</p>
 <p>Capital: {countryData.capital}</p>
-<p>Area: {countryData.area}m2</p>
+<p>Area: {countryData.area}km2</p>
  <p>Borders:
     {countryData.borders.map((border) => {
         return (
